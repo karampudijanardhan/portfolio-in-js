@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            display: flex;
+        }
+        
+        .jana{
+            width: 300px;
+            height: 300px;
+            box-shadow: 3px 4px 5px;
+        
+        }
+        .jana h1{
+            color: tomato;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .jana1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+             padding: 10px 20px;
+        }
+        .jana1 input{
+            width: 100%;
+            height: 40px;
+            border: 2px solid tomato;
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            background-color: lightcyan;
+        }
+        .jan2 p{
+            color: blue;
+            padding: 20px 10px;
+        }
+        .jan2 p:hover{
+         color:red;
+        }
+        .jan2 a{
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: tomato;
+            padding-left: 80px;
+        }
+        .jan2 a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="Rest">
+    <div class="jana">
+        <h1>Reset Password</h1>
+       <div class="jana1">
+        <input type="password" id="passowrd" placeholder="Create New Password">
+       </div>
+       <div class="jana1">
+        <input type="password" id="confirm" placeholder="Confirm Password">
+       </div>
+       <div class="jan2">
+       <p>I have account?<a onclick="res()">Reset</p>
+       </div>
+    </div>
+    </div>
+    <script src="index17.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .jana{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #fff;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 200px;
+            gap: 30px;
+
+        }
+        header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    box-shadow: 1px 0px 4px;
+    
+}
+.checkbut {
+    font-size: 2.5rem;
+    color: black;
+    display: none;
+    float: right;
+}
+#check{
+    display: none;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+   }
+   
+   nav a{
+     font-size: 1.5rem;
+     text-decoration: none;
+     cursor: pointer;
+     color:tomato;
+     display: flex;
+     padding: 20px;
+   
+   }
+a:hover,a.active{
+    background: none;
+    color: #0082e6;
+}
+.tt{
+    color: orangered;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+nav a:hover{
+    color:lime;
+}
+        .jana1{
+            padding: 50px;
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            justify-content: space-around;
+            background-color:#fff;
+            box-shadow: 2px 2px 4px;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            }
+.jana1:hover {
+  transform: rotateY(180deg);
+}
+
+        .jana1 a{
+            text-decoration: none;
+        }
+        .personal{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 100px;
+            justify-content: space-around;
+            background-image: url(https://cdn.pixabay.com/photo/2017/06/23/17/46/desert-2435404_1280.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .login{
+            width: 350px;
+            padding: 20px 10px;
+            box-shadow: 4px 5px 7px;
+            border-radius: 10px;
+            justify-content: space-around;
+            backdrop-filter: blur(5px);
+            margin-bottom: 30px;
+            margin-top: 20px;
+            animation: slide 1s ease-in-out;
+         }
+        @keyframes slide {
+  from { transform: translateX(-200px); opacity: 20; }
+  to { transform: translateX(0); opacity: 20; }
+}
+        .jana3{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+        .jana3 input{
+            display: flex;
+            width: 300px;
+            height: 40px;
+            border: 2px solid tomato;
+            border-radius: 20px;
+            font-size: 1rem;
+             font-weight: 400;       
+            background-color:transparent;
+            padding: 1px 10px;
+            font-size: 1.2rem;
+        }
+        .jana3 input:hover{
+            background-color: aqua;
+        }
+        .sub{
+            display: flex;
+            justify-content: center;
+        }
+        .sub button{
+            width: 260px;
+            height: 40px;
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin-top: 20px;
+            background-color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .sub a{
+            text-decoration: none;
+        }
+      .contant h1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        color:tomato;
+        font-style: oblique;
+        margin-top: 20px;
+      }
+      .contant p{
+        font-size: 1.1rem;
+        color:rgb(9, 10, 10);
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 200px;
+        font-style:oblique;
+      }
+      .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    margin-top: 100px;
+    height: 150px;
+    box-shadow: 1px 2px 4px;
+}
+.footer p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: oblique;
+    line-height: 30px;
+
+}
+.icons-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin-left: 100px;
+}
+.icons-footer a{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+
+      @media only screen and (max-width: 890px) {
+        .checkbut {
+        font-size: 2.9rem;
+        color: black;
+        display: block;
+        position: relative;
+       margin-left: 150px;
+    }
+    .sri h1{
+        margin-top: 250px;
+    }
+      .search{
+        display: none;
+      }
+      #check{
+        display: none;
+      }
+      nav{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+        position: relative;
+          left: -130%;
+          transition: all .5s;
+          top: 40px;
+      }
+      nav a{
+      font-size: 1.2rem;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 70px;
+    
+      
+        
+      }
+      #check:checked~nav{
+       left: 0px;
+      }
+      .contant p{
+    font-size:1rem;
+    padding: 20px;
+}
+.icons-footer{
+    margin-left: 0px;
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="tt">PraROZ</h1>
+        <input type="checkbox" id="check"></input>
+        <label for="check" class="checkbut">
+        <i class='bx bx-menu'></i>
+        </label>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index5.html">About</a>
+            <a href="index8.html">Contact</a>
+            <a href="index10.html">Portfololio</a>
+        </nav>
+        </header>
+    <div class="jana">
+        <div class="jana1">         
+            <h1>Address</h1>
+            <p>Andhra Pradesh</p>
+            <p>Nellore Dist</p>
+            <p>podhalakur mandal</p>
+            <p>Weavers Colonny 524309</p>
+        </div>
+        <div class="jana1">
+            <h1>PhoneNumber</h1>
+            <br>
+            <p>Ph:9121971848</p>
+            <p>Ph:7416204305</p>
+            <p>888-0123-4567(toll free)</p>
+        </div>
+        <div class="jana1">
+            <h1>Emial</h1>
+            <br><br>
+            <a href="">janardhankarampudi@gmial.com</a>
+        </div>
+    </div>
+    
+    <div class="personal">
+        <div class="contant">
+            <h1>Fell Free To Contact!!</h1>
+           <p> Gmail:Contact.janardhankarampudi@gmail.com</p>
+        </div>
+    <div class="login">
+     <form>
+        <div class="jana3">
+            <input id="email" type="email" placeholder="Enter a valid emial address" required>
+        </div>
+        <div class="jana3">
+            <input type="text" id="name" placeholder="Enter your Name" required>
+        </div>
+        <div class="jana3">
+            <input type="text" id="message"  placeholder="Enter Your Message" required>
+        </div>
+        <div class="sub">
+        <button onclick="sub()" type="button">SUBMIT</button>
+        </div>
+     </form>
+    </div>
+    </div>
+    <footer class="footer">
+        <p> Designed and Developed by KARAMPUDI JANARDHAN<br> Copyright @ 2025 JANARDHAN</p>
+        <div class="icons-footer">
+        <a href="https://github.com/"> <i class='bx bxl-github'></i></a>
+         <a href="https://www.linkedin.com/in/karampudijanardhan/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bq62CykuvS3eGjBbsawhafw%3D%3D"><i class='bx bxl-linkedin' ></i></a>
+         <a href="https://www.facebook.com/janardhan.karampodi?mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+         <a href="https://www.instagram.com/invites/contact/?igsh=mcwstenxb99o&utm_content=mne9s7f"><i class='bx bxl-instagram'></i></a>
+        </div>
+    <script src="index16.js"></script>
+</body>
+</html>
